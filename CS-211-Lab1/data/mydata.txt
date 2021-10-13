@@ -1,0 +1,79 @@
+
+*********** Register Reuse ***********
+error detected at function dgemm0, matrix size = 66.
+error detected at function dgemm1, matrix size = 66.
+error detected at function dgemm2, matrix size = 66.
+error detected at function dgemm3, matrix size = 66.
+error detected at function dgemm0, matrix size = 126.
+error detected at function dgemm1, matrix size = 126.
+error detected at function dgemm2, matrix size = 126.
+error detected at function dgemm3, matrix size = 126.
+error detected at function dgemm0, matrix size = 258.
+error detected at function dgemm1, matrix size = 258.
+error detected at function dgemm2, matrix size = 258.
+error detected at function dgemm3, matrix size = 258.
+error detected at function dgemm0, matrix size = 510.
+error detected at function dgemm1, matrix size = 510.
+error detected at function dgemm2, matrix size = 510.
+error detected at function dgemm3, matrix size = 510.
+error detected at function dgemm0, matrix size = 1026.
+error detected at function dgemm1, matrix size = 1026.
+error detected at function dgemm2, matrix size = 1026.
+error detected at function dgemm3, matrix size = 1026.
+error detected at function dgemm0, matrix size = 2046.
+error detected at function dgemm1, matrix size = 2046.
+error detected at function dgemm2, matrix size = 2046.
+error detected at function dgemm3, matrix size = 2046.
+dgemm0 -   66: elapsed time is  0.00000 second(s).
+dgemm0 -  126: elapsed time is  0.00000 second(s).
+dgemm0 -  258: elapsed time is  0.00000 second(s).
+dgemm0 -  510: elapsed time is  0.00000 second(s).
+dgemm0 - 1026: elapsed time is  0.00000 second(s).
+dgemm0 - 2046: elapsed time is  0.00000 second(s).
+dgemm1 -   66: elapsed time is  0.00000 second(s).
+dgemm1 -  126: elapsed time is  0.00000 second(s).
+dgemm1 -  258: elapsed time is  0.00000 second(s).
+dgemm1 -  510: elapsed time is  0.00000 second(s).
+dgemm1 - 1026: elapsed time is  0.00000 second(s).
+dgemm1 - 2046: elapsed time is  0.00000 second(s).
+dgemm2 -   66: elapsed time is  0.00000 second(s).
+dgemm2 -  126: elapsed time is  0.00000 second(s).
+dgemm2 -  258: elapsed time is  0.00000 second(s).
+dgemm2 -  510: elapsed time is  0.00000 second(s).
+dgemm2 - 1026: elapsed time is  0.00000 second(s).
+dgemm2 - 2046: elapsed time is  0.00000 second(s).
+dgemm3 -   66: elapsed time is  0.00000 second(s).
+dgemm3 -  126: elapsed time is  0.00000 second(s).
+dgemm3 -  258: elapsed time is  0.00000 second(s).
+dgemm3 -  510: elapsed time is  0.00000 second(s).
+dgemm3 - 1026: elapsed time is  0.00000 second(s).
+dgemm3 - 2046: elapsed time is  0.00000 second(s).
+
+*********** Cache reuse ***********
+error detected at function ijk , matrix size = 2040.
+error detected at function jik , matrix size = 2040.
+error detected at function kij , matrix size = 2040.
+error detected at function ikj , matrix size = 2040.
+error detected at function jki , matrix size = 2040.
+error detected at function kji , matrix size = 2040.
+error detected at function bijk, matrix size = 2040.
+error detected at function bjik, matrix size = 2040.
+error detected at function bkij, matrix size = 2040.
+error detected at function bikj, matrix size = 2040.
+error detected at function bjki, matrix size = 2040.
+error detected at function bkji, matrix size = 2040.
+ijk : elapsed time is  0.00000 second(s).
+jik : elapsed time is  0.00000 second(s).
+kij : elapsed time is  0.00000 second(s).
+ikj : elapsed time is  0.00000 second(s).
+jki : elapsed time is  0.00000 second(s).
+kji : elapsed time is  0.00000 second(s).
+bijk: elapsed time is  0.00000 second(s).
+bjik: elapsed time is  0.00000 second(s).
+bkij: elapsed time is  0.00000 second(s).
+bikj: elapsed time is  0.00000 second(s).
+bjki: elapsed time is  0.00000 second(s).
+bkji: elapsed time is  0.00000 second(s).
+
+*********** Cache reuse - Part 4. ***********
+O0 : O1 : O2 : O3 : 

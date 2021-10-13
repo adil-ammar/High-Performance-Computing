@@ -1,0 +1,276 @@
+*** Error in `./cache_part4_o0': double free or corruption (out): 0x00007f1a31081010 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7f1a35084329]
+./cache_part4_o0(main+0x171)[0x400ea1]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f1a35025555]
+./cache_part4_o0[0x400f14]
+======= Memory map: ========
+00400000-00403000 r-xp 00000000 00:28 36307008                           /home/amirz008/CS-211-Lab1/build/cache_part4_o0
+00602000-00603000 r--p 00002000 00:28 36307008                           /home/amirz008/CS-211-Lab1/build/cache_part4_o0
+00603000-00604000 rw-p 00003000 00:28 36307008                           /home/amirz008/CS-211-Lab1/build/cache_part4_o0
+01d7c000-01d9d000 rw-p 00000000 00:00 0                                  [heap]
+7f1a24000000-7f1a24021000 rw-p 00000000 00:00 0 
+7f1a24021000-7f1a28000000 ---p 00000000 00:00 0 
+7f1a292de000-7f1a2ba7b000 rw-p 00000000 00:00 0 
+7f1a2ba7b000-7f1a2ce21000 r-xp 00000000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f1a2ce21000-7f1a2d020000 ---p 013a6000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f1a2d020000-7f1a2d0f6000 r--p 013a5000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f1a2d0f6000-7f1a2d0fc000 rw-p 0147b000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f1a2d0ff000-7f1a33042000 rw-p 00000000 00:00 0 
+7f1a34deb000-7f1a34e00000 r-xp 00000000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1a34e00000-7f1a34fff000 ---p 00015000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1a34fff000-7f1a35000000 r--p 00014000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1a35000000-7f1a35001000 rw-p 00015000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f1a35003000-7f1a351c7000 r-xp 00000000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f1a351c7000-7f1a353c6000 ---p 001c4000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f1a353c6000-7f1a353ca000 r--p 001c3000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f1a353ca000-7f1a353cc000 rw-p 001c7000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f1a353cc000-7f1a353d1000 rw-p 00000000 00:00 0 
+7f1a353d3000-7f1a353d5000 r-xp 00000000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f1a353d5000-7f1a355d5000 ---p 00002000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f1a355d5000-7f1a355d6000 r--p 00002000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f1a355d6000-7f1a355d7000 rw-p 00003000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f1a355db000-7f1a356dc000 r-xp 00000000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f1a356dc000-7f1a358db000 ---p 00101000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f1a358db000-7f1a358dc000 r--p 00100000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f1a358dc000-7f1a358dd000 rw-p 00101000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f1a358e3000-7f1a358fa000 r-xp 00000000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f1a358fa000-7f1a35af9000 ---p 00017000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f1a35af9000-7f1a35afa000 r--p 00016000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f1a35afa000-7f1a35afb000 rw-p 00017000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f1a35afb000-7f1a35aff000 rw-p 00000000 00:00 0 
+7f1a35b03000-7f1a36b03000 r-xp 00000000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f1a36b03000-7f1a36d02000 ---p 01000000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f1a36d02000-7f1a36d3f000 r--p 00fff000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f1a36d3f000-7f1a36d49000 rw-p 0103c000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f1a36d49000-7f1a36d63000 rw-p 00000000 00:00 0 
+7f1a36d63000-7f1a37204000 r-xp 00000000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f1a37204000-7f1a37403000 ---p 004a1000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f1a37403000-7f1a37404000 r--p 004a0000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f1a37404000-7f1a37410000 rw-p 004a1000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f1a37413000-7f1a37917000 r-xp 00000000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f1a37917000-7f1a37b16000 ---p 00504000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f1a37b16000-7f1a37b18000 r--p 00503000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f1a37b18000-7f1a37b24000 rw-p 00505000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f1a37b24000-7f1a37b29000 rw-p 00000000 00:00 0 
+7f1a37b2b000-7f1a396bb000 r-xp 00000000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f1a396bb000-7f1a398ba000 ---p 01b90000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f1a398ba000-7f1a398c7000 r--p 01b8f000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f1a398c7000-7f1a398cd000 rw-p 01b9c000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f1a398d3000-7f1a398f5000 r-xp 00000000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7f1a39aee000-7f1a39af4000 rw-p 00000000 00:00 0 
+7f1a39af4000-7f1a39af5000 r--p 00021000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7f1a39af5000-7f1a39af6000 rw-p 00022000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7f1a39af6000-7f1a39af8000 rw-p 00000000 00:00 0 
+7f1a39af8000-7f1a39af9000 rw-p 00000000 00:00 0 
+7fffef0e9000-7fffef10a000 rw-p 00000000 00:00 0                          [stack]
+7fffef12b000-7fffef12d000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+./data.sh: line 22: 14345 Aborted                 ./$executable_name >> $output_name
+*** Error in `./cache_part4_o1': double free or corruption (out): 0x00007f8252569010 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7f825656c329]
+./cache_part4_o1(main+0x171)[0x400ea1]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f825650d555]
+./cache_part4_o1[0x400f14]
+======= Memory map: ========
+00400000-00403000 r-xp 00000000 00:28 36307017                           /home/amirz008/CS-211-Lab1/build/cache_part4_o1
+00602000-00603000 r--p 00002000 00:28 36307017                           /home/amirz008/CS-211-Lab1/build/cache_part4_o1
+00603000-00604000 rw-p 00003000 00:28 36307017                           /home/amirz008/CS-211-Lab1/build/cache_part4_o1
+00c43000-00c64000 rw-p 00000000 00:00 0                                  [heap]
+7f8244000000-7f8244021000 rw-p 00000000 00:00 0 
+7f8244021000-7f8248000000 ---p 00000000 00:00 0 
+7f824a7c6000-7f824cf63000 rw-p 00000000 00:00 0 
+7f824cf63000-7f824e309000 r-xp 00000000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f824e309000-7f824e508000 ---p 013a6000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f824e508000-7f824e5de000 r--p 013a5000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f824e5de000-7f824e5e4000 rw-p 0147b000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f824e5e7000-7f825452a000 rw-p 00000000 00:00 0 
+7f82562d3000-7f82562e8000 r-xp 00000000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f82562e8000-7f82564e7000 ---p 00015000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f82564e7000-7f82564e8000 r--p 00014000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f82564e8000-7f82564e9000 rw-p 00015000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f82564eb000-7f82566af000 r-xp 00000000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f82566af000-7f82568ae000 ---p 001c4000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f82568ae000-7f82568b2000 r--p 001c3000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f82568b2000-7f82568b4000 rw-p 001c7000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f82568b4000-7f82568b9000 rw-p 00000000 00:00 0 
+7f82568bb000-7f82568bd000 r-xp 00000000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f82568bd000-7f8256abd000 ---p 00002000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f8256abd000-7f8256abe000 r--p 00002000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f8256abe000-7f8256abf000 rw-p 00003000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f8256ac3000-7f8256bc4000 r-xp 00000000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f8256bc4000-7f8256dc3000 ---p 00101000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f8256dc3000-7f8256dc4000 r--p 00100000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f8256dc4000-7f8256dc5000 rw-p 00101000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f8256dcb000-7f8256de2000 r-xp 00000000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f8256de2000-7f8256fe1000 ---p 00017000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f8256fe1000-7f8256fe2000 r--p 00016000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f8256fe2000-7f8256fe3000 rw-p 00017000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f8256fe3000-7f8256fe7000 rw-p 00000000 00:00 0 
+7f8256feb000-7f8257feb000 r-xp 00000000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f8257feb000-7f82581ea000 ---p 01000000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f82581ea000-7f8258227000 r--p 00fff000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f8258227000-7f8258231000 rw-p 0103c000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f8258231000-7f825824b000 rw-p 00000000 00:00 0 
+7f825824b000-7f82586ec000 r-xp 00000000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f82586ec000-7f82588eb000 ---p 004a1000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f82588eb000-7f82588ec000 r--p 004a0000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f82588ec000-7f82588f8000 rw-p 004a1000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f82588fb000-7f8258dff000 r-xp 00000000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f8258dff000-7f8258ffe000 ---p 00504000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f8258ffe000-7f8259000000 r--p 00503000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f8259000000-7f825900c000 rw-p 00505000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f825900c000-7f8259011000 rw-p 00000000 00:00 0 
+7f8259013000-7f825aba3000 r-xp 00000000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f825aba3000-7f825ada2000 ---p 01b90000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f825ada2000-7f825adaf000 r--p 01b8f000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f825adaf000-7f825adb5000 rw-p 01b9c000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f825adbb000-7f825addd000 r-xp 00000000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7f825afc9000-7f825afcb000 rw-p 00000000 00:00 0 
+7f825afd6000-7f825afdc000 rw-p 00000000 00:00 0 
+7f825afdc000-7f825afdd000 r--p 00021000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7f825afdd000-7f825afde000 rw-p 00022000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7f825afde000-7f825afdf000 rw-p 00000000 00:00 0 
+7ffde9330000-7ffde9351000 rw-p 00000000 00:00 0                          [stack]
+7ffde93f3000-7ffde93f5000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+./data.sh: line 22: 14346 Aborted                 ./$executable_name >> $output_name
+*** Error in `./cache_part4_o2': double free or corruption (out): 0x00007fd7be2d9010 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7fd7c22dc329]
+./cache_part4_o2(main+0x171)[0x400ea1]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7fd7c227d555]
+./cache_part4_o2[0x400f14]
+======= Memory map: ========
+00400000-00403000 r-xp 00000000 00:28 36306983                           /home/amirz008/CS-211-Lab1/build/cache_part4_o2
+00602000-00603000 r--p 00002000 00:28 36306983                           /home/amirz008/CS-211-Lab1/build/cache_part4_o2
+00603000-00604000 rw-p 00003000 00:28 36306983                           /home/amirz008/CS-211-Lab1/build/cache_part4_o2
+01cac000-01ccd000 rw-p 00000000 00:00 0                                  [heap]
+7fd7b0000000-7fd7b0021000 rw-p 00000000 00:00 0 
+7fd7b0021000-7fd7b4000000 ---p 00000000 00:00 0 
+7fd7b6536000-7fd7b8cd3000 rw-p 00000000 00:00 0 
+7fd7b8cd3000-7fd7ba079000 r-xp 00000000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7fd7ba079000-7fd7ba278000 ---p 013a6000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7fd7ba278000-7fd7ba34e000 r--p 013a5000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7fd7ba34e000-7fd7ba354000 rw-p 0147b000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7fd7ba357000-7fd7c029a000 rw-p 00000000 00:00 0 
+7fd7c2043000-7fd7c2058000 r-xp 00000000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fd7c2058000-7fd7c2257000 ---p 00015000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fd7c2257000-7fd7c2258000 r--p 00014000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fd7c2258000-7fd7c2259000 rw-p 00015000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fd7c225b000-7fd7c241f000 r-xp 00000000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7fd7c241f000-7fd7c261e000 ---p 001c4000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7fd7c261e000-7fd7c2622000 r--p 001c3000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7fd7c2622000-7fd7c2624000 rw-p 001c7000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7fd7c2624000-7fd7c2629000 rw-p 00000000 00:00 0 
+7fd7c262b000-7fd7c262d000 r-xp 00000000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7fd7c262d000-7fd7c282d000 ---p 00002000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7fd7c282d000-7fd7c282e000 r--p 00002000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7fd7c282e000-7fd7c282f000 rw-p 00003000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7fd7c2833000-7fd7c2934000 r-xp 00000000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7fd7c2934000-7fd7c2b33000 ---p 00101000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7fd7c2b33000-7fd7c2b34000 r--p 00100000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7fd7c2b34000-7fd7c2b35000 rw-p 00101000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7fd7c2b3b000-7fd7c2b52000 r-xp 00000000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7fd7c2b52000-7fd7c2d51000 ---p 00017000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7fd7c2d51000-7fd7c2d52000 r--p 00016000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7fd7c2d52000-7fd7c2d53000 rw-p 00017000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7fd7c2d53000-7fd7c2d57000 rw-p 00000000 00:00 0 
+7fd7c2d5b000-7fd7c3d5b000 r-xp 00000000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7fd7c3d5b000-7fd7c3f5a000 ---p 01000000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7fd7c3f5a000-7fd7c3f97000 r--p 00fff000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7fd7c3f97000-7fd7c3fa1000 rw-p 0103c000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7fd7c3fa1000-7fd7c3fbb000 rw-p 00000000 00:00 0 
+7fd7c3fbb000-7fd7c445c000 r-xp 00000000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7fd7c445c000-7fd7c465b000 ---p 004a1000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7fd7c465b000-7fd7c465c000 r--p 004a0000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7fd7c465c000-7fd7c4668000 rw-p 004a1000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7fd7c466b000-7fd7c4b6f000 r-xp 00000000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7fd7c4b6f000-7fd7c4d6e000 ---p 00504000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7fd7c4d6e000-7fd7c4d70000 r--p 00503000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7fd7c4d70000-7fd7c4d7c000 rw-p 00505000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7fd7c4d7c000-7fd7c4d81000 rw-p 00000000 00:00 0 
+7fd7c4d83000-7fd7c6913000 r-xp 00000000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7fd7c6913000-7fd7c6b12000 ---p 01b90000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7fd7c6b12000-7fd7c6b1f000 r--p 01b8f000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7fd7c6b1f000-7fd7c6b25000 rw-p 01b9c000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7fd7c6b2b000-7fd7c6b4d000 r-xp 00000000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7fd7c6d4a000-7fd7c6d4c000 rw-p 00000000 00:00 0 
+7fd7c6d4c000-7fd7c6d4d000 r--p 00021000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7fd7c6d4d000-7fd7c6d4e000 rw-p 00022000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7fd7c6d4e000-7fd7c6d50000 rw-p 00000000 00:00 0 
+7fd7c6d50000-7fd7c6d55000 rw-p 00000000 00:00 0 
+7ffc223ee000-7ffc2240f000 rw-p 00000000 00:00 0                          [stack]
+7ffc22523000-7ffc22525000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+./data.sh: line 22: 14347 Aborted                 ./$executable_name >> $output_name
+*** Error in `./cache_part4_o3': double free or corruption (out): 0x00007f5f3a7d9010 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81329)[0x7f5f3e7dc329]
+./cache_part4_o3(main+0x171)[0x400ea1]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f5f3e77d555]
+./cache_part4_o3[0x400f14]
+======= Memory map: ========
+00400000-00403000 r-xp 00000000 00:28 36306973                           /home/amirz008/CS-211-Lab1/build/cache_part4_o3
+00602000-00603000 r--p 00002000 00:28 36306973                           /home/amirz008/CS-211-Lab1/build/cache_part4_o3
+00603000-00604000 rw-p 00003000 00:28 36306973                           /home/amirz008/CS-211-Lab1/build/cache_part4_o3
+00f3f000-00f60000 rw-p 00000000 00:00 0                                  [heap]
+7f5f2c000000-7f5f2c021000 rw-p 00000000 00:00 0 
+7f5f2c021000-7f5f30000000 ---p 00000000 00:00 0 
+7f5f32a36000-7f5f351d3000 rw-p 00000000 00:00 0 
+7f5f351d3000-7f5f36579000 r-xp 00000000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f5f36579000-7f5f36778000 ---p 013a6000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f5f36778000-7f5f3684e000 r--p 013a5000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f5f3684e000-7f5f36854000 rw-p 0147b000 00:28 707141475                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_def.so
+7f5f36857000-7f5f3c79a000 rw-p 00000000 00:00 0 
+7f5f3e543000-7f5f3e558000 r-xp 00000000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f5f3e558000-7f5f3e757000 ---p 00015000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f5f3e757000-7f5f3e758000 r--p 00014000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f5f3e758000-7f5f3e759000 rw-p 00015000 fd:00 33934372                   /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f5f3e75b000-7f5f3e91f000 r-xp 00000000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f5f3e91f000-7f5f3eb1e000 ---p 001c4000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f5f3eb1e000-7f5f3eb22000 r--p 001c3000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f5f3eb22000-7f5f3eb24000 rw-p 001c7000 fd:00 33555641                   /usr/lib64/libc-2.17.so
+7f5f3eb24000-7f5f3eb29000 rw-p 00000000 00:00 0 
+7f5f3eb2b000-7f5f3eb2d000 r-xp 00000000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f5f3eb2d000-7f5f3ed2d000 ---p 00002000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f5f3ed2d000-7f5f3ed2e000 r--p 00002000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f5f3ed2e000-7f5f3ed2f000 rw-p 00003000 fd:00 33586350                   /usr/lib64/libdl-2.17.so
+7f5f3ed33000-7f5f3ee34000 r-xp 00000000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f5f3ee34000-7f5f3f033000 ---p 00101000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f5f3f033000-7f5f3f034000 r--p 00100000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f5f3f034000-7f5f3f035000 rw-p 00101000 fd:00 33586352                   /usr/lib64/libm-2.17.so
+7f5f3f03b000-7f5f3f052000 r-xp 00000000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f5f3f052000-7f5f3f251000 ---p 00017000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f5f3f251000-7f5f3f252000 r--p 00016000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f5f3f252000-7f5f3f253000 rw-p 00017000 fd:00 33864218                   /usr/lib64/libpthread-2.17.so
+7f5f3f253000-7f5f3f257000 rw-p 00000000 00:00 0 
+7f5f3f25b000-7f5f4025b000 r-xp 00000000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f5f4025b000-7f5f4045a000 ---p 01000000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f5f4045a000-7f5f40497000 r--p 00fff000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f5f40497000-7f5f404a1000 rw-p 0103c000 00:28 707141474                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_core.so
+7f5f404a1000-7f5f404bb000 rw-p 00000000 00:00 0 
+7f5f404bb000-7f5f4095c000 r-xp 00000000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f5f4095c000-7f5f40b5b000 ---p 004a1000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f5f40b5b000-7f5f40b5c000 r--p 004a0000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f5f40b5c000-7f5f40b68000 rw-p 004a1000 00:28 707141503                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_sequential.so
+7f5f40b6b000-7f5f4106f000 r-xp 00000000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f5f4106f000-7f5f4126e000 ---p 00504000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f5f4126e000-7f5f41270000 r--p 00503000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f5f41270000-7f5f4127c000 rw-p 00505000 00:28 707141483                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_intel_ilp64.so
+7f5f4127c000-7f5f41281000 rw-p 00000000 00:00 0 
+7f5f41283000-7f5f42e13000 r-xp 00000000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f5f42e13000-7f5f43012000 ---p 01b90000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f5f43012000-7f5f4301f000 r--p 01b8f000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f5f4301f000-7f5f43025000 rw-p 01b9c000 00:28 707141458                  /home/act-software/opt/intel/composer_xe_2013.3.163/mkl/lib/intel64/libmkl_avx2.so
+7f5f4302b000-7f5f4304d000 r-xp 00000000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7f5f43248000-7f5f4324c000 rw-p 00000000 00:00 0 
+7f5f4324c000-7f5f4324d000 r--p 00021000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7f5f4324d000-7f5f4324e000 rw-p 00022000 fd:00 33586425                   /usr/lib64/ld-2.17.so
+7f5f4324e000-7f5f43250000 rw-p 00000000 00:00 0 
+7f5f43250000-7f5f43253000 rw-p 00000000 00:00 0 
+7fff309db000-7fff309fc000 rw-p 00000000 00:00 0                          [stack]
+7fff30a03000-7fff30a05000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+./data.sh: line 22: 14348 Aborted                 ./$executable_name >> $output_name
