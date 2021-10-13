@@ -11,7 +11,6 @@
 //
 void dgemm0(const double* A, const double* B, double* C, const int n)
 {
-/*
 int i, j, k;
 for (i=0; i<n; i++){
 	for (j=0; j<n; j++){
@@ -20,12 +19,10 @@ for (i=0; i<n; i++){
 		}
 	}
 }
-*/
 }
 
 void dgemm1(const double *A, const double *B, double *C, const int n) 
 {
-/*
 int i, j, k;
 for (i=0; i<n; i++){
 	for (j=0; j<n; j++) {
@@ -35,14 +32,12 @@ for (i=0; i<n; i++){
 		C[i*n+j] = r;
 	}
 }
-*/
 }
 //Register Reuse part 1 End
 
 //Register Reuse part 2
 void dgemm2(const double *A, const double *B, double *C, const int n) 
 {
-/*
 int i, j, k;
 for(i = 0; i < n; i += 2)
        for(j = 0; j < n; j += 2)  {
@@ -65,14 +60,12 @@ for(i = 0; i < n; i += 2)
              C[tt] = c10;
              C[tt+1] = c11;
         }
-*/
 }
 //Register Reuse part 2 End
 
 //Register Reuse part 3
 void dgemm3(const double *A, const double *B, double *C, const int n) 
 {
-/*
 //using 15 double registers in total but n needs to be a multiple of 3.
 int i, j, k;
 for(i = 0; i < n; i+=3){
@@ -114,14 +107,12 @@ for(i = 0; i < n; i+=3){
 		C[tttc] = c20; C[tttc+1] = c21; C[tttc+2] = c22;
 	}
 }
-*/
 }
 //Register Reuse part 3 End
 
 //Cache Reuse part 3
 void ijk(const double *A, const double *B, double *C, const int n) 
 {
-/*
 int i, j, k;
 for (i=0; i<n; i++){
 	for (j=0; j<n; j++){
@@ -132,12 +123,10 @@ for (i=0; i<n; i++){
 		C[i*n+j]=r;
 	}
 }
-*/
 }
 
 void bijk(const double *A, const double *B, double *C, const int n, const int b) 
 {
-/*
 int i, i1, j, j1, k, k1;
 for (i = 0; i < n; i+=b){
 	for (j = 0; j < n; j+=b){
@@ -155,12 +144,10 @@ for (i = 0; i < n; i+=b){
 		}
 	}
 }
-*/
 }
 
 void jik(const double *A, const double *B, double *C, const int n) 
 {
-/*
 int i, j, k;
 for (j=0; j<n; j++){
         for (i=0; i<n; i++){
@@ -170,12 +157,10 @@ for (j=0; j<n; j++){
                 C[i*n+j]=r;
         }
 }
-*/
 }
 
 void bjik(const double *A, const double *B, double *C, const int n, const int b) 
 {
-/*
 int i, i1, j, j1, k, k1;
 for (j = 0; j < n; j+=b){
         for (i = 0; i < n; i+=b){
@@ -193,12 +178,10 @@ for (j = 0; j < n; j+=b){
                 }
         }
 }
-*/
 }
 
 void kij(const double *A, const double *B, double *C, const int n) 
 {
-/*
 int i, j, k;
 for (k=0; k<n; k++){
         for (i=0; i<n; i++){
@@ -207,12 +190,10 @@ for (k=0; k<n; k++){
                 	C[i*n+j] += r * B[k*n+j];
         }
 }
-*/
 }
 
 void bkij(const double *A, const double *B, double *C, const int n, const int b) 
 {
-/*
 int i, i1, j, j1, k, k1;
 for (k = 0; k < n; k+=b){
         for (i = 0; i < n; i+=b){
@@ -228,13 +209,11 @@ for (k = 0; k < n; k+=b){
                 }
         }
 }
-*/
 }
 
 
 void ikj(const double *A, const double *B, double *C, const int n) 
 {
-/*
 int i, j, k;
 for (i=0; i<n; i++){
         for (k=0; k<n; k++){
@@ -243,12 +222,10 @@ for (i=0; i<n; i++){
                         C[i*n+j] += r * B[k*n+j];
         }
 }
-*/
 }
 
 void bikj(const double *A, const double *B, double *C, const int n, const int b) 
 {
-/*
 int i, i1, j, j1, k, k1;
 for (i = 0; i < n; i+=b){
         for (k = 0; k < n; k+=b){
@@ -264,12 +241,10 @@ for (i = 0; i < n; i+=b){
                 }
         }
 }
-*/
 }
 
 void jki(const double *A, const double *B, double *C, const int n) 
 {
-/*
 int i, j, k;
 for (j=0; j<n; j++){
         for (k=0; k<n; k++){
@@ -278,12 +253,10 @@ for (j=0; j<n; j++){
                         C[i*n+j] += A[i*n+k] * r;
         }
 }
-*/
 }
 
 void bjki(const double *A, const double *B, double *C, const int n, const int b) 
 {
-/*
 int i, i1, j, j1, k, k1;
 for (j = 0; j < n; j+=b){
         for (k = 0; k < n; k+=b){
@@ -299,7 +272,6 @@ for (j = 0; j < n; j+=b){
                 }
         }
 }
-*/
 }
 
 void kji(const double *A, const double *B, double *C, const int n) 
@@ -318,7 +290,6 @@ for (k=0; k<n; k++){
 
 void bkji(const double *A, const double *B, double *C, const int n, const int b) 
 {
-/*
 int i, i1, j, j1, k, k1;
 for (k = 0; k < n; k+=b){
         for (j = 0; j < n; j+=b){
@@ -334,7 +305,6 @@ for (k = 0; k < n; k+=b){
                 }
         }
 }
-*/
 }
 //Cache Reuse part 3 End 
 
