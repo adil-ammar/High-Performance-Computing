@@ -276,7 +276,6 @@ for (j = 0; j < n; j+=b){
 
 void kji(const double *A, const double *B, double *C, const int n) 
 {
-/*
 int i, j, k;
 for (k=0; k<n; k++){
         for (j=0; j<n; j++){
@@ -285,7 +284,6 @@ for (k=0; k<n; k++){
                         C[i*n+j] += A[i*n+k] * r;
         }
 }
-*/
 }
 
 void bkji(const double *A, const double *B, double *C, const int n, const int b) 
